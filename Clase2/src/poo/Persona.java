@@ -11,7 +11,7 @@ package poo;
  */
 public class Persona {
     
-    private long cedula;
+    private String cedula;
     private String nombre;
     private String apellido;
     private String genero;
@@ -21,7 +21,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(long cedula, String nombre, String apellido, String genero, String direccion, int edad) {
+    public Persona(String cedula, String nombre, String apellido, String genero, String direccion, int edad) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -30,7 +30,7 @@ public class Persona {
         this.edad = edad;
     }
 
-    public long getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
@@ -54,7 +54,7 @@ public class Persona {
         return edad;
     }
 
-    public void setCedula(long cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
